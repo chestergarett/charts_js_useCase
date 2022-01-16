@@ -1,3 +1,4 @@
+import { PureComponent } from 'react';
 import { 
     ResponsiveContainer,
     AreaChart,

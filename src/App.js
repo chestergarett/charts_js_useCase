@@ -4,14 +4,14 @@ import StackedBarChart from './components/StackedBarChart';
 import HorizontalBarChart from './components/HorizontalBarChart';
 import LineChart from './components/LineChart';
 import PieChart from './components/PieChart';
-import TreeMap from './components/TreeMap';
+import TreeMapChart from './components/TreeMapChart';
 import AreaGraph from './components/AreaGraph';
 
 function App() {
 
   return (
     <>
-      <AreaGraph />
+      <TreeMapChart />
     </>
   );
 }
