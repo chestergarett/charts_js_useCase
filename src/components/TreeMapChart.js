@@ -76,7 +76,6 @@ const CustomTooltip = ({ active, payload, label }) => {
 const TreeMapChart = () => {
   
   return (
-    <ResponsiveContainer width={400} height={200}>
       <Treemap
           data={data}
           dataKey="size"
@@ -84,10 +83,11 @@ const TreeMapChart = () => {
           stroke="#fff"
           fill="#8884d8"
           content={<CustomizedContent colors={COLORS} />}
+          width={400}
+          height={200}
       >
         <Tooltip content={<CustomTooltip />} />
       </Treemap>
-    </ResponsiveContainer>
   )
 }
 

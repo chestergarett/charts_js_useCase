@@ -6,12 +6,15 @@ import LineChart from './components/LineChart';
 import PieChart from './components/PieChart';
 import TreeMapChart from './components/TreeMapChart';
 import AreaGraph from './components/AreaGraph';
+import TreeMapChartV2 from './components/TreeMapChartV2';
+import TreeMapChartV3 from './components/TreeMapChartV3';
+import WorldMap from './components/WorldMap';
 
 function App() {
 
   return (
     <>
-      <TreeMapChart />
+      <WorldMap />
     </>
   );
 }
