@@ -9,12 +9,13 @@ import AreaGraph from './components/AreaGraph';
 import TreeMapChartV2 from './components/TreeMapChartV2';
 import TreeMapChartV3 from './components/TreeMapChartV3';
 import WorldMap from './components/WorldMap';
+import DecompositionTree from './components/DecompositionTree';
 
 function App() {
 
   return (
     <>
-      <WorldMap />
+      <DecompositionTree />
     </>
   );
 }
