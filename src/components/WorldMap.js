@@ -1,4 +1,4 @@
-import {MapContainer, Marker, TileLayer, Tooltip } from 'react-leaflet';
+import {MapContainer, Marker, TileLayer, Tooltip, Circle, SVGOverlay } from 'react-leaflet';
 import L from 'leaflet';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import 'leaflet/dist/leaflet.css';
@@ -19,6 +19,11 @@ const locations = [
     { name: "north", position: [1.4, 103.8], size: 50, forecast: "heavy-rain" },
 ];
 
+const bounds = [
+    [1.35735, 103.7],
+    [1.35735+.01, 103.7+.02]
+]
+
 const WorldMap = () => {
 
     return (
@@ -32,6 +37,11 @@ const WorldMap = () => {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             />
+            <Circle center={[1.35735, 103.7]} radius={400}>
+                <Tooltip direction="bottom"  opacity={1} permanent>
+                    Site 1
+                </Tooltip>
+            </Circle>
             {locations.map((location) => {
                 return (
                     <Marker position={location.position} 
